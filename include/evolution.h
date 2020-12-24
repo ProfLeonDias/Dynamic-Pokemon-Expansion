@@ -43,10 +43,6 @@ enum EvolutionMethods
 	EVO_MOVE,	// knows a given move
 	EVO_OTHER_PARTY_MON,	//another poke in the party, arg is a specific species
 	EVO_LEVEL_SPECIFIC_TIME_RANGE, // above given level with a range (unknown is [start][end]. eg lycanroc -> 1700-1800 hrs -> 0x1112)
-	EVO_CRITICAL_HIT, // successfully land 3 critical hits in one battle
-	EVO_NATURE_HIGH, // evolution based on high key nature at a certain level
-	EVO_NATURE_LOW, // evolution based on low key nature at a certain level
-	EVO_DAMAGE_LOCATION // recieve 49+ damage in battle without fainting, walk to specific tile
 };
 
 #define EVO_GIGANTAMAX 0xFD
@@ -60,24 +56,111 @@ enum MegaEvoVariants
 	MEGA_VARIANT_ULTRA_BURST, //Necrozma
 };
 
-#define MAP_NAME_ROUTE_1 0x65
-#define MAP_NAME_ROUTE_2 0x66
-#define MAP_NAME_FLOWER_PARADISE 0x88
-#define MAP_NAME_GRIM_WOODS 0x7E
-#define MAP_NAME_ROUTE_4 0x63
-#define MAP_NAME_CINDER_VOLCANO 0x7F
-#define MAP_NAME_ROUTE_5 0x69
-#define MAP_NAME_VALLEY_CAVE 0x83
-#define MAP_NAME_ROUTE_6 0x6A
-#define MAP_NAME_ROUTE_7 0x6B
-#define MAP_NAME_ROUTE_8 0x6C
-#define MAP_NAME_FROST_MOUNTAIN 0x82
-#define MAP_NAME_BLIZZARD_CITY 0x5C
-#define MAP_NAME_ROUTE_9 0x6D
-#define MAP_NAME_ROUTE_10 0x64
-#define MAP_NAME_ROUTE_11 0x6F
-#define MAP_NAME_THUNDERCAP_MT 0x8A
-#define MAP_NAME_ROUTE_12 0x70
-#define MAP_NAME_VIVILL_WOODS 0x8C
-#define MAP_NAME_ROUTE_16 0x74
-#define MAP_NAME_ROUTE_17 0x75
+#define MAP_NAME_PALLET_TOWN                  0x58
+#define MAP_NAME_VIRIDIAN_CITY                0x59
+#define MAP_NAME_PEWTER_CITY                  0x5A
+#define MAP_NAME_CERULEAN_CITY                0x5B
+#define MAP_NAME_LAVENDER_TOWN                0x5C
+#define MAP_NAME_VERMILION_CITY               0x5D
+#define MAP_NAME_CELADON_CITY                 0x5E
+#define MAP_NAME_FUCHSIA_CITY                 0x5F
+#define MAP_NAME_CINNABAR_ISLAND              0x60
+#define MAP_NAME_INDIGO_PLATEAU               0x61
+#define MAP_NAME_SAFFRON_CITY                 0x62
+#define MAP_NAME_ROUTE_4_FLYDUP               0x63
+#define MAP_NAME_ROUTE_10_FLYDUP              0x64
+#define MAP_NAME_ROUTE_1                      0x65
+#define MAP_NAME_ROUTE_2                      0x66
+#define MAP_NAME_ROUTE_3                      0x67
+#define MAP_NAME_ROUTE_4                      0x68
+#define MAP_NAME_ROUTE_5                      0x69
+#define MAP_NAME_ROUTE_6                      0x6A
+#define MAP_NAME_ROUTE_7                      0x6B
+#define MAP_NAME_ROUTE_8                      0x6C
+#define MAP_NAME_ROUTE_9                      0x6D
+#define MAP_NAME_ROUTE_10                     0x6E
+#define MAP_NAME_ROUTE_11                     0x6F
+#define MAP_NAME_ROUTE_12                     0x70
+#define MAP_NAME_ROUTE_13                     0x71
+#define MAP_NAME_ROUTE_14                     0x72
+#define MAP_NAME_ROUTE_15                     0x73
+#define MAP_NAME_ROUTE_16                     0x74
+#define MAP_NAME_ROUTE_17                     0x75
+#define MAP_NAME_ROUTE_18                     0x76
+#define MAP_NAME_ROUTE_19                     0x77
+#define MAP_NAME_ROUTE_20                     0x78
+#define MAP_NAME_ROUTE_21                     0x79
+#define MAP_NAME_ROUTE_22                     0x7A
+#define MAP_NAME_ROUTE_23                     0x7B
+#define MAP_NAME_ROUTE_24                     0x7C
+#define MAP_NAME_ROUTE_25                     0x7D
+#define MAP_NAME_VIRIDIAN_FOREST              0x7E
+#define MAP_NAME_MT_MOON                      0x7F
+#define MAP_NAME_S_S_ANNE                     0x80
+#define MAP_NAME_UNDERGROUND_PATH             0x81
+#define MAP_NAME_UNDERGROUND_PATH_2           0x82
+#define MAP_NAME_DIGLETTS_CAVE                0x83
+#define MAP_NAME_KANTO_VICTORY_ROAD           0x84
+#define MAP_NAME_ROCKET_HIDEOUT               0x85
+#define MAP_NAME_SILPH_CO                     0x86
+#define MAP_NAME_POKEMON_MANSION              0x87
+#define MAP_NAME_KANTO_SAFARI_ZONE            0x88
+#define MAP_NAME_POKEMON_LEAGUE               0x89
+#define MAP_NAME_ROCK_TUNNEL                  0x8A
+#define MAP_NAME_SEAFOAM_ISLANDS              0x8B
+#define MAP_NAME_POKEMON_TOWER                0x8C
+#define MAP_NAME_CERULEAN_CAVE                0x8D
+#define MAP_NAME_POWER_PLANT                  0x8E
+#define MAP_NAME_ONE_ISLAND                   0x8F
+#define MAP_NAME_TWO_ISLAND                   0x90
+#define MAP_NAME_THREE_ISLAND                 0x91
+#define MAP_NAME_FOUR_ISLAND                  0x92
+#define MAP_NAME_FIVE_ISLAND                  0x93
+#define MAP_NAME_SEVEN_ISLAND                 0x94
+#define MAP_NAME_SIX_ISLAND                   0x95
+#define MAP_NAME_KINDLE_ROAD                  0x96
+#define MAP_NAME_TREASURE_BEACH               0x97
+#define MAP_NAME_CAPE_BRINK                   0x98
+#define MAP_NAME_BOND_BRIDGE                  0x99
+#define MAP_NAME_THREE_ISLE_PORT              0x9A
+#define MAP_NAME_SEVII_ISLE_6                 0x9B
+#define MAP_NAME_SEVII_ISLE_7                 0x9C
+#define MAP_NAME_SEVII_ISLE_8                 0x9D
+#define MAP_NAME_SEVII_ISLE_9                 0x9E
+#define MAP_NAME_RESORT_GORGEOUS              0x9F
+#define MAP_NAME_WATER_LABYRINTH              0xA0
+#define MAP_NAME_FIVE_ISLE_MEADOW             0xA1
+#define MAP_NAME_MEMORIAL_PILLAR              0xA2
+#define MAP_NAME_OUTCAST_ISLAND               0xA3
+#define MAP_NAME_GREEN_PATH                   0xA4
+#define MAP_NAME_WATER_PATH                   0xA5
+#define MAP_NAME_RUIN_VALLEY                  0xA6
+#define MAP_NAME_TRAINER_TOWER                0xA7
+#define MAP_NAME_CANYON_ENTRANCE              0xA8
+#define MAP_NAME_SEVAULT_CANYON               0xA9
+#define MAP_NAME_TANOBY_RUINS                 0xAA
+#define MAP_NAME_SEVII_ISLE_22                0xAB
+#define MAP_NAME_SEVII_ISLE_23                0xAC
+#define MAP_NAME_SEVII_ISLE_24                0xAD
+#define MAP_NAME_NAVEL_ROCK                   0xAE
+#define MAP_NAME_MT_EMBER                     0xAF
+#define MAP_NAME_BERRY_FOREST                 0xB0
+#define MAP_NAME_ICEFALL_CAVE                 0xB1
+#define MAP_NAME_ROCKET_WAREHOUSE             0xB2
+#define MAP_NAME_TRAINER_TOWER_2              0xB3
+#define MAP_NAME_DOTTED_HOLE                  0xB4
+#define MAP_NAME_LOST_CAVE                    0xB5
+#define MAP_NAME_PATTERN_BUSH                 0xB6
+#define MAP_NAME_ALTERING_CAVE                0xB7
+#define MAP_NAME_TANOBY_CHAMBERS              0xB8
+#define MAP_NAME_THREE_ISLE_PATH              0xB9
+#define MAP_NAME_TANOBY_KEY                   0xBA
+#define MAP_NAME_BIRTH_ISLAND                 0xBB
+#define MAP_NAME_MONEAN_CHAMBER               0xBC
+#define MAP_NAME_LIPTOO_CHAMBER               0xBD
+#define MAP_NAME_WEEPTH_CHAMBER               0xBE
+#define MAP_NAME_DILFORD_CHAMBER              0xBF
+#define MAP_NAME_SCUFIB_CHAMBER               0xC0
+#define MAP_NAME_RIXY_CHAMBER                 0xC1
+#define MAP_NAME_VIAPOIS_CHAMBER              0xC2
+#define MAP_NAME_EMBER_SPA                    0xC3
