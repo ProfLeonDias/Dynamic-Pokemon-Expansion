@@ -3673,7 +3673,7 @@ extern const u8 gFrontSprite1206ZamazentaCrownedPal[];
 extern const u8 gFrontSprite1207EternatusEternamaxPal[];
 extern const u8 gFrontSprite1208UrshifuRapidPal[];
 extern const u8 gFrontSprite1209CalyrexIceRiderPal[];
-extern const u8 gFrontSprite1210CalyrexGhostRiderPal[];
+extern const u8 gFrontSprite1210CalyrexShadowRiderPal[];
 extern const u8 gFrontSprite1211MeowthGPal[];
 extern const u8 gFrontSprite1212PonytaGPal[];
 extern const u8 gFrontSprite1213RapidashGPal[];
