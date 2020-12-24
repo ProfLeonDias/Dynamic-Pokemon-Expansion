@@ -5933,22 +5933,27 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 		.size = 0x0,
 		.y_offset = 0x0,
 	},
-	[SPECIES_UNKNOWN_MYTHICAL] =
-	{
-		.size = 0x0,
-		.y_offset = 0x0,
-	},
-	[SPECIES_CALYREX] =
-	{
-		.size = 0x0,
-		.y_offset = 0x0,
-	},
 	[SPECIES_REGIELEKI] =
 	{
 		.size = 0x0,
 		.y_offset = 0x0,
 	},
 	[SPECIES_REGIDRAGO] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
+	},
+	[SPECIES_GLASTIER] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
+	},
+	[SPECIES_SPECTRIER] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
+	},
+	[SPECIES_CALYREX] =
 	{
 		.size = 0x0,
 		.y_offset = 0x0,
@@ -6039,6 +6044,16 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES] =
 		.y_offset = 0x0,
 	},
 	[SPECIES_URSHIFU_RAPID] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
+	},
+	[SPECIES_CALYREX_ICE] =
+	{
+		.size = 0x0,
+		.y_offset = 0x0,
+	},
+	[SPECIES_CALYREX_GHOST] =
 	{
 		.size = 0x0,
 		.y_offset = 0x0,
