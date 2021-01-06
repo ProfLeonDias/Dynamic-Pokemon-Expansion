@@ -3738,7 +3738,7 @@ extern const u8 gBackShinySprite003VenusaurPal[];
 extern const u8 gBackShinySprite004CharmanderPal[];
 extern const u8 gBackShinySprite005CharmeleonPal[];
 extern const u8 gBackShinySprite006CharizardPal[];
-al[];extern const u8 gBackShinySprite007SquirtlePal[];
+extern const u8 gBackShinySprite007SquirtlePal[];
 extern const u8 gBackShinySprite008WartortlePal[];
 extern const u8 gBackShinySprite009BlastoisePal[];
 extern const u8 gBackShinySprite010CaterpiePal[];
@@ -4620,7 +4620,7 @@ extern const u8 gBackShinySprite910KyogrePrimalPal[];
 extern const u8 gBackShinySprite911RayquazaMegaPal[];
 extern const u8 gBackShinySprite912LopunnyMegaPal[];
 extern const u8 gBackShinySprite913GarchompMegaPal[];
-extern const u8 gBackShinySprite914LucarioMegaP
+extern const u8 gBackShinySprite914LucarioMegaPal[];
 extern const u8 gBackShinySprite915AbomasnowMegaPal[];
 extern const u8 gBackShinySprite916GalladeMegaPal[];
 extern const u8 gBackShinySprite917AudinoMegaPal[];
