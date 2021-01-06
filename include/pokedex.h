@@ -1575,5 +1575,5 @@ extern const u8 DEX_ENTRY_ZACIAN_CROWNED[];
 extern const u8 DEX_ENTRY_ZAMAZENTA_CROWNED[];
 extern const u8 DEX_ENTRY_ETERNATUS_ETERNAMAX[];
 extern const u8 DEX_ENTRY_URSHIFU_RAPID[];
-extern const u8 DEX_ENTRY_CALYREX_ICE_RIDER[];
-extern const u8 DEX_ENTRY_CALYREX_SHADOW_RIDER[];
+extern const u8 DEX_ENTRY_CALYREX_ICE[];
+extern const u8 DEX_ENTRY_CALYREX_GHOST[];
