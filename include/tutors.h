@@ -131,6 +131,7 @@ enum MoveTutors
 	TUTOR126_POWER_WHIP,
 	TUTOR127_SOLAR_BLADE,
 
+
 //Special Move Tutors - Not in Table
 	TUTOR_SPECIAL_DRACO_METEOR,			//128 - Dragon Pokemon
 	TUTOR_SPECIAL_SECRET_SWORD,			//129 - Keldeo only
