@@ -155,7 +155,7 @@ enum MegaEvoVariants
 #define MAP_NAME_TANOBY_CHAMBERS              0xB8
 #define MAP_NAME_THREE_ISLE_PATH              0xB9
 #define MAP_NAME_TANOBY_KEY                   0xBA
-#define MAP_NAME_BIRTH_ISLAND                 0xBB
+#define MAP_NAME_MT_SILVER                    0xBB
 #define MAP_NAME_MONEAN_CHAMBER               0xBC
 #define MAP_NAME_LIPTOO_CHAMBER               0xBD
 #define MAP_NAME_WEEPTH_CHAMBER               0xBE
