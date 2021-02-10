@@ -264,3 +264,4 @@ const u16 gMoveTutorMoves[NUM_MOVE_TUTOR_MOVES] =
 	MOVE_POWERWHIP,			//127
 	MOVE_SOLARBLADE,		//128
 };
+ 
